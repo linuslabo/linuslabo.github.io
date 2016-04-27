@@ -89,6 +89,7 @@ a {
     margin: 5px auto;
 
     cursor: pointer;
+	visibility: hidden;
 }
 
 .bolla span {
