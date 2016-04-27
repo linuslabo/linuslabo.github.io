@@ -1,0 +1,430 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    background-color: #000000;
+}
+
+a {
+    color: #fff;
+    font-weight: bold;
+}
+
+#cont-container {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 520px;
+}
+
+.bolla {
+    border-radius: 999px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 5px auto;
+
+    cursor: pointer;
+}
+
+.bolla span {
+    position: relative;
+    top: 45%;
+    visibility: hidden;
+}
+
+.bolla.hoverable:hover span, .bolla.active span {
+    visibility: visible;
+}
+
+#dizzy {
+    position: absolute;
+    bottom: -150%;
+    right: 32%;
+    width: 400px;
+    height: 400px;
+    /*background-color: #1F8A70;*/
+    background-color: #165751;
+    background: url('../img/delaunayC.jpg');
+
+    font-size: 4em;
+    line-height: 4.7em;
+}
+
+/*
+#dizzy.comeIn {
+    animation: dizzyIn 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation: dizzyIn 2s;
+    -webkit-animation-fill-mode: forwards;
+}*/
+
+#dizzy.hoverable:hover, #dizzy.active {
+    /*background: #1F8A70;*/
+    background: #165751;
+}
+
+/*
+@keyframes dizzyIn {
+0% {bottom: -100%;}
+90% {bottom: 25%;}
+100% {bottom: 15%;}
+}
+
+@-webkit-keyframes dizzyIn {
+0% {bottom: -100%;}
+90% {bottom: 25%;}
+100% {bottom: 15%;}
+}
+*/
+
+#coffcoff {
+    position: absolute;
+    bottom: -150%;
+    right: 4%;
+    width: 250px;
+    height: 250px;
+    /*background-color: #BEDB39;*/
+    background-color: #448C61;
+    background: url('../img/albero01C.jpg');
+
+    font-size: 2.5em;
+    line-height: 4em;
+}
+
+/*
+#coffcoff.comeIn {
+    animation: coffcoffIn 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation: coffcoffIn 2s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#coffcoff.goOut {
+    animation: coffcoffOut 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation: coffcoffOut 2s;
+    -webkit-animation-fill-mode: forwards;
+}
+*/
+#coffcoff.hoverable:hover, #coffcoff.active {
+    /*background: #BEDB39;*/
+    background: #448C61;
+}
+
+/*
+@keyframes coffcoffIn {
+0% {bottom: -100%;}
+90% {bottom: 14%;}
+100% {bottom: 4%;}
+}
+
+@-webkit-keyframes coffcoffIn {
+0% {bottom: -100%;}
+90% {bottom: 14%;}
+100% {bottom: 4%;}
+}
+
+@keyframes coffcoffOut {
+0% {bottom: 4%;}
+100% {bottom: 150%;}
+}
+
+@-webkit-keyframes coffcoffOut {
+0% {bottom: 4%;}
+100% {bottom: 150%;}
+}
+*/
+#me {
+    position: absolute;
+    bottom: -150%;
+    right: 16%;
+    width: 200px;
+    height: 200px;
+
+    /*background-color: #004358;*/
+    background-color: #0B2E41;
+    background: url('../img/coffcoff_screamC.jpg');
+
+    font-size: 3em;
+    line-height: 3em;
+
+    z-index: 2;
+}
+
+#me.hoverable:hover, #me.active {
+    /*background: #004358;*/
+    background: #0B2E41;
+}
+
+#big_me a {
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    background-image: url('../img/LinkedInLogo_White_100.png');
+    background-image: url('../img/LinkedInLogo_White.svg');
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#contatti {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    background: #FFE11A;
+}
+
+#github {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    background: #FD7400;
+}
+
+#pag {
+    position: fixed;
+
+    z-index: 9;
+
+}
+
+.bigBubble {
+    position: fixed;
+    z-index: 9;
+    width: 500px;
+
+    bottom: -100%;
+
+    height: 94%;
+
+    left: 50%;
+    margin-left: -47%;
+
+    border-radius: 999px;
+
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    display: block;
+}
+
+.bigBubble > h1 {
+
+}
+
+.bigBubble > div {
+    width: 70%;
+    margin-left: -35%;
+    left: 50%;
+    position: absolute;
+    height: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 5px;
+
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    font-variant: small-caps;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
