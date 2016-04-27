@@ -293,13 +293,27 @@ a {
 
 footer {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     left: 5px;
 
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
 
     font-variant: small-caps;
+}
+
+footer > span > a {
+    display: block;
+    margin-top: 3px;
+    margin-left: 6px;
+    float: right;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/LinkedInLogo_White.svg');
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* ==========================================================================
