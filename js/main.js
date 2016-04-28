@@ -8,15 +8,23 @@ $(function () {
 
     setLang();
 
-    $(window).resize(function () {
-        center_container_vert();
-        $bigBubble = $('.bigBubble');
-        $bigBubble.css({
-            width: $bigBubble.height(),
-            "margin-left": -$bigBubble.height() / 2
-        });
+    $(window).resize(function () {		
+		if (window.innerWidth > 550) {
+			center_container_vert();
+			$bigBubble = $('.bigBubble');
+			$bigBubble.css({
+				width: $bigBubble.height(),
+				"margin-left": -$bigBubble.height() / 2
+			});
 
-        resize_linkedin_logo();
+			resize_linkedin_logo();
+			
+		} else {
+			$('.bigBubble').css({
+				"width": "",
+				"margin-left": ""
+			});
+		}
     });
 
     center_container_vert();
@@ -28,7 +36,6 @@ $(function () {
      });*/
 
     bubbleComeIn();
-
 });
 
 var enableBubbleClick = function (enableHtmlClick) {
@@ -105,8 +112,8 @@ var center_container_vert = function () {
 };
 
 var resize_linkedin_logo = function () {
-    $bigMe = $('#big_me');
-    $bigMe.find('a').height($bigMe.height() / 11);
+	$bigMe = $('#big_me');
+	$bigMe.find('a').height(Math.round($bigMe.height() / 11));
 };
 
 var bubbleGoOut = function () {
@@ -198,12 +205,12 @@ var setLang = function () {
 
     // en is default
     if (lang != "en") {
-        $pars = $('*[data-lang=lang]');
+        $pars = $('*[lang="' + lang + '"]');
         if ($pars.length > 0) {
             showParsByLang($pars);
 
         } else if (lang == "it") {
-            showParsByLang($('*[data-lang="it"]'));
+            showParsByLang($('*[lang="it"]'));
         }
     }
 };
