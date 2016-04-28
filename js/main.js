@@ -24,6 +24,7 @@ $(function () {
 				"width": "",
 				"margin-left": ""
 			});
+			$('#big_me').find('a').css("height","");
 		}
     });
 
