@@ -343,7 +343,8 @@ footer > span > a {
 
 }
 
-@media only screen and (max-width: 550px), only screen and (max-device-width: 550px) {
+@media only screen and (max-width: 550px), only screen and (max-device-width: 550px),
+	   only screen and (max-height: 550px), only screen and (max-device-height: 550px) {
 	#cont-container {
 		display: none;
 		visibility: hidden;

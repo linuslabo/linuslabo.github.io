@@ -7,9 +7,11 @@ $(function () {
     $bolle = $('.bolla');
 
     setLang();
+	
+	var transformation_max_size = 550;
 
     $(window).resize(function () {		
-		if (window.innerWidth > 550) {
+		if (window.innerWidth > transformation_max_size && window.innerHeight > transformation_max_size) {
 			center_container_vert();
 			$bigBubble = $('.bigBubble');
 			$bigBubble.css({
