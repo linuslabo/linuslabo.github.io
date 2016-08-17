@@ -242,13 +242,13 @@ a {
     background: #FFE11A;
 }
 
-#github {
+/*#github {
     position: absolute;
     width: 100px;
     height: 100px;
 
     background: #FD7400;
-}
+}*/
 
 #pag {
     position: fixed;
@@ -320,12 +320,19 @@ footer > span > a {
     float: right;
     width: 15px;
     height: 15px;
-    background-image: url('../img/LinkedInLogo_White.svg');
     -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 	border-radius: 3px;
+}
+
+footer > span > a.linkedin {
+    background-image: url('../img/LinkedInLogo_White.svg');
+}
+
+footer > span > a.github {
+    background-image: url('../img/GitHub_mark.svg');
 }
 
 /* ==========================================================================
